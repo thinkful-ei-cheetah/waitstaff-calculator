@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 600px;
+}
+
+section {
+  justify-content: space-between;
+  border: 1px solid black;
+  text-align: center;
+  margin: 20px;
+}
+
+.left {
+  height: 440px;
+}
+
+.right {
+  height: 200px;
+}
+
+.content {
+  text-align: left;
+  padding: 20px;
+}
+
+.form-field {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin: 3px 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+h3.total {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 2px solid black;
+}
+
+h2 {
+  margin: 0;
+  padding: 20px;
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button.red {
+  background-color: #e74c3c;
+}
+
+.form-controls {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 59px;
+}
+
+input {
+  height: 30px;
+  font-size:15px;
+}
+
+.price {
+  font-weight: normal;
+  float:right;
+}
+
+.clear-calc {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}

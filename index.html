@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Waitstaff Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+  <header>
+    <h1>Waitstaff Calculator</h1>
+  </header>
+
+  <main>
+    <section class='left'>
+      <h2>Enter the Meal Details</h2>
+      <div class='content'>
+        <form id="js-meal-detail-form">
+          <div class='form-field'>
+            <label for="meal-base-price">Base Meal Price ($): </label>
+            <input type="number" step='.01' name="meal-base-price" placeholder='18.50' required>
+          </div>
+
+          <div class='form-field'>
+            <label for="meal-tax-rate">Tax Rate (%): </label>
+            <input type="number" step='.01' name="meal-tax-rate" placeholder='7.00' required>
+          </div>
+
+          <div class='form-field'>
+            <label for="meal-tip-rate">Tip Percentage (%): </label>
+            <input type="number" step='.01' name="meal-tip-rate" placeholder='15.00' required>
+          </div>
+          
+          <div class='form-controls'>
+            <button class='button' type="submit">Submit</button>
+            <button class='button' type="reset" value="cancel">Cancel</button>
+          </div>
+        </form>    
+      </div>
+    </section>
+
+    <section class='right'>
+      <h2>Customer Charges</h2>
+      <div class='content js-customer-charges'>
+        <p style='font-style: italic; color:gray'>add a meal to see this field populate</p>
+      </div>
+    </section>
+
+
+    <section class='right'>
+      <h2>My Earnings Info</h2>
+      <div class='content js-my-earnings-info'>
+        <p style='font-style: italic; color:gray'>add a meal to see this field populate</p>
+      </div>
+    </section>
+
+    <div class='clear-calc'>
+      <button class='button red' type='button'>Clear</button>
+    </div>
+  </main>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='index.js'></script>
+</body>
+</html>
