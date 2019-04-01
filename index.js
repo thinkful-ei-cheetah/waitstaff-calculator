@@ -12,7 +12,7 @@ class Meal {
   }
 
   tipTotal() {
-    return this.price * this.tipRate;
+    return this.subtotal() * this.tipRate;
   }
 
   total() {
